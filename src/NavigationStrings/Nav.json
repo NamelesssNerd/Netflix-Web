@@ -1,0 +1,26 @@
+[
+    {
+        "Name": "Home",
+        "Link": "/Home"
+    },
+    {
+        "Name": "TV SHows",
+        "Link": "/TVShows"
+    },
+    {
+        "Name": "Movies",
+        "Link": "/Movies"
+    },
+    {
+        "Name": "Latest",
+        "Link": "/Latest"
+    },
+    {
+        "Name": "My List",
+        "Link": "/MyList"
+    },
+    {
+        "Name": "Browse by Language",
+        "Link": "/BrowseByLanguage"
+    }
+]

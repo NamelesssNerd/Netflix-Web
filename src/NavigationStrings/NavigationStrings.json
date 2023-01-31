@@ -1,0 +1,11 @@
+{
+    "Welcome": "/",
+    "Home": "/Home",
+    "TVSHows": "/TVShows",
+    "Movies": "/Movies",
+    "Latest": "/Latest",
+    "MyList": "/MyList",
+    "BrowseBy": "/BrowseByLanguage",
+    "UserChoose": "/UserChoose",
+    "id": "/Details:"
+}

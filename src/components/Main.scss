@@ -1,0 +1,308 @@
+.container {
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    background-color: rgb(0, 0, 0);
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--Bg-color);
+
+    h1 {
+        font-size: 3rem;
+        color: var(--color-white);
+    }
+}
+
+.topic {
+    width: 100%;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    color: var(--color-white);
+}
+
+.datarender {
+    width: 100%;
+    height: 11rem;
+
+    .data {
+        width: auto;
+        display: flex;
+        align-items: center;
+        height: 9rem;
+        overflow-x: scroll;
+        transition: 3s;
+        padding-left: .3rem;
+
+        .back {
+            cursor: pointer;
+            height: 7rem;
+            width: 2rem;
+            background-color: rgba(177, 146, 146, 0.292);
+            position: absolute;
+            z-index: 99;
+            left: 0;
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+        }
+
+        .forward {
+            cursor: pointer;
+            height: 10rem;
+            width: 2rem;
+            right: 0;
+            cursor: pointer;
+            background-color: rgba(177, 146, 146, 0.292);
+            position: absolute;
+            z-index: 99;
+            font-size: 3rem;
+            color: rgb(255, 255, 255);
+        }
+
+        .box {
+            transition: .3s;
+            overflow-x: auto;
+            margin-right: 1rem;
+            border-radius: .3rem;
+            overflow: hidden;
+            overflow-y: hidden;
+            min-height: 6.8rem;
+            min-width: 6rem;
+            overflow: hidden;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.3);
+            }
+
+
+            img {
+                width: 100%;
+                height: 6.8rem;
+            }
+        }
+    }
+
+    .data::-webkit-scrollbar {
+        display: none;
+    }
+}
+.imagemainconttainer {
+    width: 100%;
+    height: 80vh;
+    background-color: rgb(0, 0, 0);
+
+    .info {
+        margin-top: -10rem;
+        height: 4rem;
+        width: 15rem;
+        margin-left: 5rem;
+        position: absolute;
+        display: flex;
+        align-items: center;
+
+        button {
+            height: 2.4rem;
+            width: 7rem;
+            border: none;
+            border-radius: .2rem;
+            cursor: pointer;
+            display: flex;
+            padding-left: 1rem;
+            align-items: center;
+            background-color: var(--color-white);
+
+            .play {
+                font-size: 1.2rem;
+            }
+
+            h6 {
+                margin-left: .5rem;
+                font-size: 1rem;
+            }
+        }
+
+        .ii {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            border-radius: .2rem;
+            height: 2.4rem;
+            margin-left: 1rem;
+            width: 7rem;
+            background-color: #333;
+            padding-left: .3rem;
+            color: var(--color-white);
+
+            .play {
+                font-size: 1.4rem;
+            }
+
+            h6 {
+                margin-left: .4rem;
+                font-size: 1rem;
+            }
+        }
+    }
+
+    video {
+        margin-top: 0;
+        height: 80vh;
+        width: 100%;
+        object-fit: cover;
+        z-index: -9;
+    }
+
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        width: 35rem;
+
+        .image {
+            height: 3rem;
+            width: 10rem;
+            display: flex;
+            align-items: center;
+
+            img {
+                cursor: pointer;
+                margin-left: .4rem;
+                width: auto;
+                height: 2rem;
+            }
+        }
+
+        .naav {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 25rem;
+            height: 3rem;
+
+            a {
+                text-decoration: none;
+            }
+
+            h6 {
+                color: var(--color-white);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .right {
+        height: 3rem;
+        width: 18rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .search {
+            cursor: pointer;
+            margin-right: 1rem;
+            color: var(--color-white);
+        }
+
+        img {
+            cursor: pointer;
+            height: 1.2rem;
+        }
+    }
+}
+
+.welcome {
+    background-color: var(--Bg-color);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+.userChoose {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Bg-color);
+
+    .allimage {
+        height: 20rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 3rem;
+    }
+
+    .centermain {
+        width: 35rem;
+        height: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 4rem;
+            color: var(--color-white);
+            font-weight: 800;
+        }
+
+        .imagebox {
+            margin-left: 3rem;
+            width: 10rem;
+            cursor: pointer;
+            overflow: hidden;
+            height: 9rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+            H4 {
+                width: 100%;
+                height: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: var(--color-white);
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+
+            img {
+                height: 7rem;
+            }
+        }
+    }
+}
